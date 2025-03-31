@@ -31,10 +31,10 @@
             width: 100%;
             font-family: "Roboto", sans-serif;
             color: var(--theme-first-color);
-            background-color: var(--theme-second-color);
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
+            overflow: hidden;
         }
         .container {
             display: flex;
@@ -46,6 +46,7 @@
             padding: 20px;
             box-sizing: border-box;
             justify-content: flex-start;
+            overflow: auto;
         }
         .card {
           width: 90%;
@@ -99,7 +100,7 @@
         #title {
           width: 100%;
           background-color: var(--theme-first-color);
-          color: var(--theme-second-color);
+          color: white;
           text-align: center;
           margin: 0;
           padding: 10px;
@@ -118,7 +119,7 @@
 
 <div class="container">
 
-  <div class="card" style="box-shadow: none; opacity: 0.5; scale: 1;">
+  <div class="card" style="box-shadow: 0px 0px 5px 0px var(--theme-first-color-light);opacity: 0.5; scale: 1;">
     <a href="javascript:void(0);" style="cursor: wait;">
       <div class="card-title">
         <h2>Blood Bank</h2>
@@ -162,7 +163,7 @@
     </a>
   </div>
 
-  <div class="card" style="box-shadow: none; opacity: 0.5; scale: 1;">
+  <div class="card" style="box-shadow: 0px 0px 5px 0px var(--theme-first-color-light);opacity: 0.5; scale: 1;">
     <a href="javascript:void(0);" style="cursor: wait;">
       <div class="card-title">
         <h2>Microbiology</h2>
@@ -173,7 +174,7 @@
     </a>
   </div>
 
-  <div class="card" style="box-shadow: none; opacity: 0.5; scale: 1;">
+  <div class="card" style="box-shadow: 0px 0px 5px 0px var(--theme-first-color-light);opacity: 0.5; scale: 1;">
     <a href="javascript:void(0);" style="cursor: wait;">
       <div class="card-title">
         <h2>Molecular Biology</h2>
