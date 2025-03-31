@@ -60,8 +60,9 @@
           box-shadow: 0px 0px 5px 0px var(--theme-first-color-light);
         }
         .card:hover {
-          box-shadow: 0px 10px 15px 0px var(--theme-first-color);
+          box-shadow: 0px 10px 15px 0px var(--theme-second-color);
           scale: 1.01;
+          outline: 4px solid var(--theme-second-color);
         }
         .card-title {
           text-align: center;
@@ -92,7 +93,9 @@
           width: 90%;
           margin: 0;
           align-self: center;
-          color: var(--theme-first-color-light);
+          color: var(--theme-second-color);
+          border: 2px solid var(--theme-second-color);
+          border-radius: 2px;
         }
         p {
           text-indent: 10px hanging;
