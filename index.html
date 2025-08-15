@@ -6,6 +6,7 @@
     <meta name="description"
             content="Study guides for selected ASCP BOC Certification exam">
     <title>ASCP BOC Guides</title>
+    <link rel="icon" type="image/png" href="imgs/notes.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -73,11 +74,12 @@
           margin: 20px;
           background-color: white;
           box-shadow: 0px 0px 5px 0px var(--theme-first-color-light);
-          animation: appear 0.5s ease-in;
+          opacity: 0;
+          animation: appear 0.5s ease-in forwards;
         }
         .card:hover {
           box-shadow: 0px 10px 15px 0px var(--theme-second-color);
-          scale: 1.01;
+          scale: 1.1;
           outline: 4px solid var(--theme-second-color);
         }
         @keyframes appear {
@@ -119,9 +121,9 @@
           width: 90%;
           margin: 0;
           align-self: center;
-          color: var(--theme-second-color);
-          border: 2px solid var(--theme-second-color);
+          border: 1px solid var(--theme-second-color);
           border-radius: 2px;
+          background: var(--theme-second-color);
         }
         p {
           text-indent: 10px hanging;
@@ -170,7 +172,7 @@
       </a>
     </div>
     
-    <div class="card">
+    <div class="card" style="animation-delay: 0.1s;">
       <a href="https://chemistry.mlsascp.com/">
         <div class="flex-title">
           <img src="imgs/ch.png" alt="Chemistry">
@@ -189,7 +191,7 @@
 
   <div class="flex-row">
 
-    <div class="card">
+    <div class="card" style="animation-delay: 0.2s;">
       <a href="https://cytometry.mlsascp.com/">
         <div class="flex-title">
           <img src="imgs/cy.png" alt="Cytometry">
@@ -203,7 +205,7 @@
       </a>
     </div>
 
-    <div class="card">
+    <div class="card" style="animation-delay: 0.3s;">
       <a href="https://hematology.mlsascp.com/">
         <div class="flex-title">
           <img src="imgs/he.png" alt="Hematology">
@@ -222,7 +224,21 @@
   
   <div class="flex-row">
 
-    <div class="card">
+    <div class="card" style="animation-delay: 0.4s;">
+      <a href="https://labops.mlsascp.com/">
+        <div class="flex-title">
+          <img src="imgs/lo.png" alt="Laboratory Operations">
+          <div class="card-title">
+            <h2>Laboratory Operations</h2>
+            <h4>MLT | MLS</h4>
+          </div>
+        </div>
+        <hr>
+        <p class="card-text">Quality Assessment & Troubleshooting | Safety | Laboratory Mathematics | Manual/Automated Methodology & Instrumetation</p>
+      </a>
+    </div>
+
+    <div class="card" style="animation-delay: 0.5s;">
       <a href="https://microbiology.mlsascp.com/">
         <div class="flex-title">
           <img src="imgs/mi.png" alt="Microbiology">
@@ -236,7 +252,12 @@
       </a>
     </div>
 
-    <div class="card">
+  </div>
+
+  
+  <div class="flex-row">
+
+    <div class="card" style="animation-delay: 0.6s;">
       <a href="https://molecular.mlsascp.com/">
         <div class="flex-title">
           <img src="imgs/mb.png" alt="Molecular">
@@ -250,12 +271,7 @@
       </a>
     </div>
 
-  </div>
-
-  
-  <div class="flex-row">
-
-    <div class="card">
+    <div class="card" style="animation-delay: 0.7s;">
       <a href="https://uabf.mlsascp.com/">
         <div class="flex-title">
         <img src="imgs/uabf.png" alt="Urinalysis & Body Fluids">
