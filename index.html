@@ -7,6 +7,12 @@
             content="Study guides for selected ASCP BOC Certification exam">
     <title>ASCP BOC Guides</title>
     <link rel="icon" type="image/png" href="imgs/notes.png">
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('./sw.js')
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -126,6 +132,15 @@
           border-radius: 2px;
           background: var(--theme-second-color);
         }
+        .divider {
+          margin: 20px;
+          border: 2px solid var(--theme-first-color);
+          border-radius: 10px;
+          max-width: 500px;
+          opacity: 0;
+          animation: appear 0.5s ease-in forwards;
+          transition: scale 0.1s;
+        }
         p {
           text-indent: 10px hanging;
         }
@@ -145,6 +160,9 @@
           .card img {
             display: none;
           }
+          .card-title {
+            padding-right: 0;
+          }
           
         }
     </style>
@@ -152,10 +170,30 @@
 <body>
 
 <div id="title">
-  <h1>ASCP BOC Study Guides</h1>
+  <h1>ASCP BOC Prep Guides</h1>
 </div>
 
 <div class="container">
+
+  <div class="flex-row">
+
+    <div class="card">
+      <a href="https://prep.mlsascp.com/">
+        <div class="flex-title">
+          <img src="imgs/prep.png" alt="ASCP BOC Prep">
+          <div class="card-title">
+            <h2>Prep Questions</h2>
+            <h4><span style="opacity: 0.3;">BB | C |</span> H <span style="opacity: 0.3;">| LO | M | MB | UA | BF</span></h4>
+          </div>
+        </div>
+        <hr>
+        <p class="card-text">Hematology Questions only at this time | More content area questions coming soon</p>
+      </a>
+    </div>
+
+  </div>
+
+  <hr class="divider">
 
   <div class="flex-row">
 
@@ -282,7 +320,7 @@
           </div>
         </div>
         <hr>
-        <p class="card-text">Preanalytic Procedures | Analytic Procedures for Bacteriology | Analytic Procedures for Mycobacteriology, Virology, Parasitology, and Mycology</p>
+        <p class="card-text">Physical & Chemical Properties | Microscopic | Physiology | Disease States</p>
       </a>
     </div>
 

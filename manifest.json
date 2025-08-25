@@ -1,0 +1,47 @@
+{
+  "background_color": "#363945",
+  "description": "Study guides for selected ASCP BOC Certification exam",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "ASCP BOC Prep",
+  "orientation": "any",
+  "scope": "https://mlsascp.com/",
+  "short_name": "ASCP Prep",
+  "start_url": "https://mlsascp.com/",
+  "theme_color": "#efe1ce",
+  "id": "pwa_mlsascp",
+  "lang": "en",
+  "categories": [
+    "education",
+    "medical",
+    "productivity",
+    "utilities"
+  ],
+  "screenshots" : [
+    {
+      "src": "imgs/mlsascp_wide.webp",
+      "sizes": "3840×2160",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Desktop view"
+    },
+    {
+      "src": "assets/imgs/screenshots/narrow.webp",
+      "sizes": "750×1334",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Mobile view"
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "icons": [
+    {
+      "src": "imgs/notes.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

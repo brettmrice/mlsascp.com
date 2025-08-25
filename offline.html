@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bulb Out</title>
+  <link rel="icon" href="assets/imgs/id.svg">
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background: #363945;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #EFE1CE;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    h3, p {
+      display: flex;
+      align-self: center;
+      padding: 0 10%;
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <center>
+      <img id="bulb" src="assets/imgs/bulb_off.png" style="max-width: 300px">
+    </center>
+  </div>
+  
+  <div style="display: flex; flex-direction: column;">
+    <h3>Internet working?</h3>
+    <p>Connection needed to access content</p>
+  </div>
+
+  <script>
+    setInterval(() => {
+      if(bulb.src.includes('bulb_off')) {
+        bulb.src = "assets/imgs/bulb_on.png";
+      } else {
+        bulb.src = "assets/imgs/bulb_off.png";
+      }
+    }, 1000);
+  </script>
+  
+</body>
