@@ -6,8 +6,8 @@ const CACHE = "mlsascp-cache-v0.1";
 
 const offlineFallbackPage = "/offline.html";
 const precachedResources = [offlineFallbackPage, 
-                            "/assets/imgs/bulb_on.png",
-                            "/assets/imgs/bulb_off.png"];
+                            "imgs/bulb_on.png",
+                            "imgs/bulb_off.png"];
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
