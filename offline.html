@@ -32,7 +32,7 @@
 <body>
   <div>
     <center>
-      <img id="bulb" src="assets/imgs/bulb_off.png" style="max-width: 300px">
+      <img id="bulb" src="imgs/bulb_off.png" style="max-width: 300px">
     </center>
   </div>
   
@@ -44,9 +44,9 @@
   <script>
     setInterval(() => {
       if(bulb.src.includes('bulb_off')) {
-        bulb.src = "assets/imgs/bulb_on.png";
+        bulb.src = "imgs/bulb_on.png";
       } else {
-        bulb.src = "assets/imgs/bulb_off.png";
+        bulb.src = "imgs/bulb_off.png";
       }
     }, 1000);
   </script>
