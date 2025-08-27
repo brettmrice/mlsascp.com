@@ -6,6 +6,17 @@
   "name": "ASCP BOC Prep",
   "orientation": "any",
   "scope": "https://mlsascp.com/",
+  "scope_extensions": [
+    { "type": "origin", "origin": "https://prep.mlsascp.com/"},
+    { "type": "origin", "origin": "https://bloodbank.mlsascp.com/"},
+    { "type": "origin", "origin": "https://chemistry.mlsascp.com/"},
+    { "type": "origin", "origin": "https://cytometry.mlsascp.com/"},
+    { "type": "origin", "origin": "https://hematology.mlsascp.com/"},
+    { "type": "origin", "origin": "https://labops.mlsascp.com/"},
+    { "type": "origin", "origin": "https://microbiology.mlsascp.com/"},
+    { "type": "origin", "origin": "https://molecular.mlsascp.com/"},
+    { "type": "origin", "origin": "https://uabf.mlsascp.com/"}
+  ],
   "short_name": "ASCP Prep",
   "start_url": "https://mlsascp.com/",
   "theme_color": "#efe1ce",
