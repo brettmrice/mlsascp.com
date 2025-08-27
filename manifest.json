@@ -20,7 +20,7 @@
   "short_name": "ASCP Prep",
   "start_url": "https://mlsascp.com/",
   "theme_color": "#efe1ce",
-  "id": "pwa_mlsascp",
+  "id": "https://mlsascp.com/",
   "lang": "en",
   "categories": [
     "education",
